@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header, nav, catalogo */
+.navegador{
+    background-color: rgba(188, 85, 240, 0.951);
+
+}
+.tienda{
+    color: rgb(231, 172, 8);
+    background-color: rgba(188, 85, 240, 0.951);
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lobster', cursive;   
+}
+.navegador ul{
+    list-style: none;
+    display: flex;
+}
+
+.navegador ul li a{
+    color: azure;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;  
+}
+.navegador .fa-bars{
+    display: none;
+}
+@media(max-width:768px){
+    .navegador .fa-bars{
+        margin: 10px;
+        font-size: 35px;
+        color: azure ;
+        display: block;
+    
+    }
+    .navegador ul{
+        position: fixed;
+        left: -300px;
+        width: 250px;
+        height: 70vh;
+        background-color:  rgba(188, 85, 240, 0.951);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        transition: 0.5s;
+        border-radius: 15px;
+        border: 5px solid #0f0d0d;
+
+    }
+
+    .navegador .fa-bars:hover + ul {
+        left: 0;
+
+    }
+    .navegador ul:hover{
+        left: 0;
+    }
+    .navegador ul li a{
+        color: azure;
+          
+    }
+
+
+}
+
+/* ---- fin etiqueta 1----*/
+
+
+/*    main y div         */
+.tarjeta{
+    width: 290px;
+    margin: 10px;
+    background-color: rgba(188, 85, 240, 0.951);
+    padding: 10px;
+    font-family: 'Lobster', cursive;
+    border: none;
+    border-radius: 6px;
+    color: azure;
+    
+         
+}
+
+.tarjeta img{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.tarjeta ul{
+    list-style: none;
+}
+.tarjeta h3{
+    font-size: 20px;
+
+}
+.tarjeta button{
+    background-color: rgb(231, 172, 8);
+    padding: 10px 17px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.catalogo{
+    color: rgb(231, 172, 8);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.tarjeta select{
+    background-color: rgb(231, 172, 8);
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+}
+
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario h2{
+    color: rgb(231, 172, 8);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.usuario h3{
+    color: rgb(231, 172, 8);
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+.mapa-pedido{
+    width: 850px;
+    height: 200px; 
+    padding: 20px;
+}
+.usuario{
+    border: 3px solid #060404;
+    border-radius: 5px;
+    margin: 10px;
+    background-color:rgba(188, 85, 240, 0.951) ;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.usuario button{
+    background-color: rgb(231, 172, 8);
+    padding: 10px 17px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.target{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    gap: 150px;
+}
+
+
+/*-----fin etiqueta 2-----*/
+
+/*folder, footer          */
+.pie-de-pagina{
+    background-color: rgba(188, 85, 240, 0.951);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.datos{
+    font-size: 20px;
+    color: azure;
+    display: block;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    flex-direction: row;
+
+}
+.mapa-folder{
+    width: 250px;
+    height: 150px;
+    border: 5px solid #040202;
+    background-color: rgba(188, 85, 240, 0.951);
+    border-radius: 10px;
+    margin: 20px;
+}
+.logo-insta{
+    width: 70px;
+    height: 70px;
+    border: 5px solid #040202;
+    border-radius: 15px;
+}
+.logo-face{
+    width: 70px;
+    height: 70px;
+    border: 5px solid #040202;
+    border-radius: 15px;
+    background-color: white;
+}
+.logo-twitter{
+    width: 70px;
+    height: 70px;
+    border: 5px solid #040202;
+    border-radius: 15px;
+}
+
+
+/*------fin footer----------*/
+
