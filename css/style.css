@@ -35,24 +35,26 @@
 }
 @media(max-width:768px){
     .navegador .fa-bars{
-        margin: 10px;
+        margin: 5px;
         font-size: 35px;
         color: azure ;
         display: block;
     
+    
     }
     .navegador ul{
-        position: fixed;
-        left: -300px;
-        width: 250px;
-        height: 70vh;
+        position: absolute;
+        left: -290px;
+        width: 220px;
+        height: 75vh;
         background-color:  rgba(188, 85, 240, 0.951);
         flex-direction: column;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 10px;
         transition: 0.5s;
-        border-radius: 15px;
-        border: 5px solid #0f0d0d;
+        border-radius: 10px;
+        border: 3px solid #0f0d0d;
+        z-index: 4;
 
     }
 
